@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock%}
+
+{% block content%}
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    padding-left:auto;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+</style>
+
+<form method="GET">
+    <h1 align="center" class="text-2xl xl:text-3xl font-bold">
+        Profile Information
+    </h1>
+</br>
+
+<div class="card">
+  <h1 align="center">{{current_user.firstName}} {{current_user.lastName}}</h1>
+  <p class="card-text">
+    <ul>
+      <li><strong>First Name:</strong> {{current_user.firstName}}</li></br>
+      <li><strong>Last Name:</strong>{{current_user.lastName}}</li></br>
+      <li><strong>Email:</strong>{{current_user.email}}</li></br>
+     <li><strong>Age:</strong>{{current_user.age}}</li></br>
+      <li><strong>Nationality:</strong>{{current_user.nationality}}</li></br>
+      <li><strong>Phone Number:</strong>{{current_user.phoneNum}}</li></br>
+     <li><strong>Adress:</strong>{{current_user.adress}}</li></br>
+      {% for rooms in current_user.booked_rooms %}
+      <li>{{rooms.number}}</li></br>
+      {% endfor %}
+    </ul>
+      </p>
+      <p><button><a href="/user">Edit Profile Information</a></button></p>
+      
+</div>
+   
+{% endblock %}

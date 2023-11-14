@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block title %}Double Room{% endblock%}
+
+{% block content%}
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Reserve Room</b></h1>
+  <p><span class="w3-tag">Book your Double Room now!</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://www.italianbark.com/wp-content/uploads/2018/01/hotel-room-design-trends-italianbark-interior-design-blog.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Double Room</b></h3>
+      <h5>This 25m<sup>2</sup> room offers twin beds, courtyard views and free WiFi, complimentary coffee and tea, complimentary access to the health club and indoor pool,and complimentary access to the resort.</h5>
+    </div>
+
+    <div class="w3-container">
+    <p><strong>It includes:</strong></p>
+      <ul>
+    <li>Wireless internet in your room</li>
+    <li>High speed internet</li>
+    <li>Pillow Menu</li>
+    <li>Coffee/tea making facilities</li>
+    <li>Ironing board and flat-iron</li>
+    <li>Shoe polisher</li>
+    <li>Mini Bar</li>
+  </ul>
+  
+  <p><strong>I would like to include:</strong></p>
+  <input type="checkbox" id="seaView" name="seaView" value="seaView">
+  <label for="vehicle1"> Sea View</label><br>
+  <input type="checkbox" id="poolView" name="poolView" value="poolView">
+  <label for="vehicle2"> Pool View</label><br>
+  <input type="checkbox" id="Breakfast" name="Breakfast" value="Breakfast">
+  <label for="vehicle3"> Breakfast</label><br>
+  <input type="checkbox" id="extraBed" name="extraBed" value="extraBed">
+  <label for="vehicle3"> Extra Bed</label><br><br>
+  
+   <label for="birthday">From:</label>
+  <input type="date" id="from" name="from">
+  <br><br>
+   <label for="birthday">To:</label>
+  <input type="date" id="to" name="to">
+  
+  <br><br>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Check availability »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Reviews  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Other Rooms</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+        <span class="w3-large"><a href="/singleroom">Single Room</a></span><br>
+        <span>Single bed</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://img1.10bestmedia.com/Images/Photos/378649/Park-Hyatt-New-York-Manhattan-Sky-Suite-Master-Bedroom-low-res_54_990x660.jpg" class="w3-left w3-margin-right" style="width:100px">
+        <span class="w3-large"><a href="/deluxeroom">Deluxe Room</a></span><br>
+        <span>King-size bed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="https://www.georesort.my/wp-content/uploads/2020/12/rsz_geo21416108.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+        <span class="w3-large"><a href="/familyroom">Choose Room</a></span><br>
+        <span>King-size bed with a kids bed</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="http://cdn.cnn.com/cnnnext/dam/assets/140127103345-peninsula-shanghai-deluxe-mock-up.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+        <span class="w3-large"><a href="/royalroom">Royal Suite</a></span><br>
+        <span>King-size bed</span>
+      </li>  
+       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="https://securecdn.pymnts.com/wp-content/uploads/2016/05/Hotel-Room-Secondary-Market.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
+        <span class="w3-large"><a href="/queenroom">Queen's Room</a></span><br>
+        <span>Queen-size bed</span>
+      </li> 
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Add Review</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p>Type review here</p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="/rooms">Previous</a></button>
+</footer>
+
+{%endblock %}
+

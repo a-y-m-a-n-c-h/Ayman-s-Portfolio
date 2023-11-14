@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+
+
+{% block content %}
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+    <!-- Image header -->
+    <header class="w3-display-container w3-wide" id="home">
+      <img class="w3-image" src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/04/12/1329/MUMGH-P0765-Inner-Courtyard-Hotel-Exterior-Evening.jpg/MUMGH-P0765-Inner-Courtyard-Hotel-Exterior-Evening.16x9.jpg" alt="Fashion Blog" width="1600" height="1060">
+      <div class="w3-display-left w3-padding-large">
+        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Chalambassy</b></h1>
+        {% if current_user.is_authenticated %}
+        <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off w3-center"><a href="/rooms">BOOK A ROOM</a></button></h6>
+        {% else%}
+        <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off w3-left"><a href="/login">LOGIN</a></button></h6>
+        <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off w3-right"><a href="/sign-up">REGISTER</a></button></h6>
+        {% endif %}
+    </div>
+    </header>
+  </div>
+{% endblock %}

@@ -1,0 +1,60 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "connectionTimeout": 30,
+            "password": "Yasmeen12",
+            "username": "root",
+            "database": "hotel",
+            "name": "My SQL Local"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "My SQL Local",
+            "database": "hotel",
+            "username": "root",
+            "password": "Yasmeen12",
+            "connectionTimeout": 30
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "My SQL",
+            "database": "hotel",
+            "username": "root",
+            "connectionTimeout": 50,
+            "password": "Yasmeen12"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "SQL",
+            "database": "hotel",
+            "username": "root",
+            "password": "Yasmeen12",
+            "connectionTimeout": 90
+        }
+    ]
+}
